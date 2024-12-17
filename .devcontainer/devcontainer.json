@@ -1,0 +1,29 @@
+{
+	"name": "FiftyOne Workspace",
+	"image": "ghcr.io/thesteve0/fiftyone-wkshp-container:latest",
+    // Uncomment if you want a particular file opened on start
+    // "codespaces": {
+    //   "openFiles": [
+    //     "README.md"
+    //   ]
+    // },
+    "vscode": {
+        // Set *default* container specific settings.json values on container create.
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        },
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+        "ms-python.debugpy",
+        "ms-python.isort",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-slideshow"
+	],
+	"remoteUser": "vscode",
+	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
+	"postCreateCommand": "source /opt/.fiftyone-venv/bin/activate"
+}
