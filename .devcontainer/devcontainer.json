@@ -24,5 +24,4 @@
         "ms-toolsai.vscode-jupyter-slideshow"
 	],
 	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
-	"postCreateCommand": "source /opt/.fiftyone-venv/bin/activate"
 }
