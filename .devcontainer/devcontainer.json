@@ -2,11 +2,11 @@
 	"name": "FiftyOne Workspace",
 	"image": "ghcr.io/thesteve0/fiftyone-wkshp-container:latest",
     // Uncomment if you want a particular file opened on start
-    //    "codespaces": {
-    //    "openFiles": [
-	//    "README.md"
-    //     ]
-    //   },
+       "codespaces": {
+          "openFiles": [
+	    "test.py"
+         ]
+       },
 
         // Set *default* container specific settings.json values on container create.
     "settings": {
